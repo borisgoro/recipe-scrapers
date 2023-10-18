@@ -20,7 +20,8 @@ class EthanChlebowski(AbstractScraper):
         return self.schema.total_time()
 
     def yields(self):
-        return self.schema.yields()
+        # return self.schema.yields()
+        return None
 
     def image(self):
         return self.schema.image()

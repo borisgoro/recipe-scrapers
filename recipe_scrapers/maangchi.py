@@ -26,7 +26,7 @@ class Maangchi(AbstractScraper):
 
     def ingredients(self):
         before = self.soup.find("h4", string="Directions").find_all_previous("li")
-        after = self.soup.find("h4", string="Ingredients:").find_all_next("li")
+        after = self.soup.find("h4", string="Ingredients").find_all_next("li")
         list_before = [normalize_string(b.get_text()) for b in before]
         list_after = [normalize_string(a.get_text()) for a in after]
         list_before.reverse()
