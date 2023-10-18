@@ -140,3 +140,6 @@ Temporary Items
 # Editor configs
 .vscode
 .idea
+
+# Recipes
+/recipes
