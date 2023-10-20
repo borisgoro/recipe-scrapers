@@ -7,7 +7,10 @@ if __name__ == "__main__":
         exit(0)
 
     link = sys.argv[1]
-    scraper = scrape_me(link)
+    try:
+        scraper = scrape_me(link)
+    except:
+        scraper = scrape_me(link, wild_mode = True)
 
     f = None
     try:
